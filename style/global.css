@@ -26,18 +26,27 @@ html {
     font-size: 6.25%;
 }
 
-body, button, input, textarea {
+body,
+button,
+input,
+textarea {
     font-size: clamp(14px, 16rem, 2vw);
 }
 
 body {
+    display: flex;
     height: 100vh;
     background-color: var(--background);
 }
 
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .content header {
     width: 80%;
-    margin: 35rem auto 35rem auto
+    margin: 35rem auto 35rem auto;
 }
 
 .content header img {
@@ -60,12 +69,15 @@ h2 {
     border-width: 0;
 }
 
-input, button , .button{
+input,
+button,
+.button {
     height: 50rem;
     border-radius: 8rem;
 }
 
-button, .button {
+button,
+.button {
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     line-height: 0;
@@ -78,16 +90,18 @@ button, .button {
     transition: filter .2s;
 }
 
-button:hover, .button:hover {
+button:hover,
+.button:hover {
     filter: brightness(1.2);
 }
 
-button > img .button > img {
+button>img .button>img {
     margin-left: 1rem;
     width: 20rem;
 }
 
-button.outlinedm, .button.outlined {
+button.outlinedm,
+.button.outlined {
     background-color: var(--white);
     color: var(--blue);
     border: 2rem solid var(--blue);

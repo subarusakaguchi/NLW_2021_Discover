@@ -1,9 +1,9 @@
 .content {
     display: grid;
     grid-template: 114rem 1fr / 60% 40%;
-    grid-template-areas: 
-    'header header'
-    'left right';
+    grid-template-areas:
+        'header header'
+        'left right';
 }
 
 header {
@@ -15,17 +15,18 @@ header {
     background-image: url(../assets/home-bg-img.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top;
+    background-position-x: -10rem;
 }
 
 main {
     grid-area: right;
     display: flex;
     align-items: center;
+    margin-top: -12rem;
 }
 
 main .container {
-    width: min(363rem 100%);
+    width: min(363rem, 100%);
 }
 
 main h2 {
@@ -40,7 +41,62 @@ input {
     padding: 16rem;
 }
 
-input, .button, button {
+input,
+.button,
+button {
     width: 100%;
     margin-bottom: 18rem;
+}
+
+/* Separator line */
+
+.separator {
+    display: flex;
+    align-items: center;
+}
+
+.separator div:nth-child(2) {
+    color: var(--grayBlue);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 13.5rem;
+    line-height: 0;
+    margin: 40rem 0;
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3) {
+    background-color: var(--grayBlue);
+    width: 100%;
+    height: 1px;
+}
+
+/* Bg Balls */
+
+.ball {
+    background-color: var(--grayBlue);
+    position: fixed;
+    clip-path: circle();
+    opacity: 0.3;
+}
+
+.top {
+    width: 633rem;
+    height: 633rem;
+    top: -350rem;
+    right: -450rem;
+}
+
+.bottom {
+    width: 212rem;
+    height: 212rem;
+    bottom: -150rem;
+    right: 56rem;
+}
+
+/* Input Number arrows */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
