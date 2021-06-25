@@ -24,7 +24,7 @@
             <img src="./images/logo.svg" alt="Logo do Rocket.Q" />
 
             <div class="buttons">
-                <div class="button outlined">
+                <div class="button outlined" id="idRoom" data-id="323243">
                     #323243
                     <img src="./images/copy.svg" alt="Copiar número da sala">
                 </div>
@@ -60,9 +60,9 @@
                         </div>
                     </div>
                     <div class="action">
-                        <a href="#" class="check"><img src="./images/check.svg" alt="Icon marcar lido">Marcar como
+                        <a href="#" class="check" data-id="2"><img src="./images/check.svg" alt="Icon marcar lido">Marcar como
                             lida</a>
-                        <a href="#" class="delete"><img src="./images/trash.svg" alt="Icon excluir">Excluir</a>
+                        <a href="#" class="delete" data-id="2"><img src="./images/trash.svg" alt="Icon excluir">Excluir</a>
                     </div>
                 </div>
 
@@ -76,9 +76,9 @@
                         </div>
                     </div>
                     <div class="action">
-                        <a href="#" class="check"><img src="./images/check.svg" alt="Icon marcar lido">Marcar como
+                        <a href="#" class="check" data-id="3"><img src="./images/check.svg" alt="Icon marcar lido">Marcar como
                             lida</a>
-                        <a href="#" class="delete"><img src="./images/trash.svg" alt="Icon excluir">Excluir</a>
+                        <a href="#" class="delete" data-id="3"><img src="./images/trash.svg" alt="Icon excluir">Excluir</a>
                     </div>
                 </div>
 
@@ -98,9 +98,9 @@
                         </div>
                     </div>
                     <div class="action">
-                        <a href="#" class="check"><img src="./images/check.svg" alt="Icon marcar lido">Marcar como
+                        <a href="#" class="check" data-id="4"><img src="./images/check.svg" alt="Icon marcar lido">Marcar como
                             lida</a>
-                        <a href="#" class="delete"><img src="./images/trash.svg" alt="Icon excluir">Excluir</a>
+                        <a href="#" class="delete" data-id="4"><img src="./images/trash.svg" alt="Icon excluir">Excluir</a>
                     </div>
                 </div>
 
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <div class="action">
-                        <a href="#" class="delete"><img src="./images/trash.svg" alt="Icon excluir">Excluir</a>
+                        <a href="#" class="delete" data-id="1"><img src="./images/trash.svg" alt="Icon excluir">Excluir</a>
                     </div>
                 </div>
             </div>
@@ -123,21 +123,24 @@
 
 
     <!-- MODAL -->
-    <div class="modalWrapper active">
+    <div class="modalWrapper">
         <div class="modal">
             <h2>Excluir pergunta</h2>
             <p>Tem certeza que deseja excluir esta perguntar?</p>
-            <form action="">
+            <form action="#" method="POST">
                 <label for="password" class="sr-only">Digite a sua senha</label>
                 <input type="password" name="password" id="password" placeholder="Digite a sua senha">
                 <div class="buttons">
-                    <div class="button gray">Cancelar</div>
+                    <div class="button gray cancel">Cancelar</div>
                     <button class="red">Sim, excluir</button>
                 </div>
 
             </form>
         </div>
     </div>
+
+    <!-- Script -->
+    <script src="./scripts/main.js" defer type="module"></script>
 </body>
 
 </html>

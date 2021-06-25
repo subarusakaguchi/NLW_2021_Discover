@@ -6,14 +6,11 @@
     left: 0;
     display: flex;
     background-color: rgba(4, 9, 17, 0.8);
-
     visibility: hidden;
-    opacity: 0;
 }
 
 .active {
     visibility: visible;
-    opacity: 1;
 }
 
 .modalWrapper .modal {
