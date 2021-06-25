@@ -1,0 +1,62 @@
+.modalWrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: rgba(4, 9, 17, 0.8);
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalWrapper .modal {
+    font-family: 'Poppins', sans-serif;
+    width: min(590rem, 90%);
+    background-color: var(--white);
+    text-align: center;
+    margin: auto;
+    padding: 64rem 86rem;
+    border-radius: 8rem;
+}
+
+.modalWrapper .modal h2 {
+    font-size: 24rem;
+    font-weight: 700;
+    margin-bottom: 12rem;
+    color: var(--black);
+}
+
+.modalWrapper .modal p {
+    margin-bottom: 24rem;
+    color: var(--grayDark);
+}
+
+.modalWrapper .modal input {
+    margin-bottom: 40rem;
+    padding: 13rem 16rem;
+    border: 2rem solid var(--blue);
+    outline: none;
+    width: min(70%, 302rem);
+}
+
+.modalWrapper .modal .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalWrapper .modal .buttons > .button {
+    margin-right: 8rem;
+}
+
+.modalWrapper .modal .buttons > button,
+.modalWrapper .modal .buttons > .button {
+    padding: 13rem 32rem;
+}

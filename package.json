@@ -1,0 +1,19 @@
+{
+  "name": "NLW_2021_Discover",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido durannte a semana do NLW da Rocketseat, este é um site capaz de gerar série de perguntas feitas para o dono da sala que a gerou",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": "https://github.com/subarusakaguchi/NLW_2021_Discover.git",
+  "author": "Subaru Sakaguchi <subarusakaguchi@yahoo.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
