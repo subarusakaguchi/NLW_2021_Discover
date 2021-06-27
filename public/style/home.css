@@ -101,3 +101,22 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
+/* Responsividade */
+
+@media only screen and (max-width: 1000px) {
+    .content {
+        grid-template-areas: 
+        'header header'
+        'right right';
+    }
+
+    #bg {
+        background: none;
+    }
+    
+    main .container {
+        display: block;
+        margin: 50rem auto auto auto;
+    }
+}
